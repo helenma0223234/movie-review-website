@@ -1,6 +1,10 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
+import React, { useState } from 'react';
 import './App.css';
 
 function App() {
+  const [movieName, setMovieName] = useState('');
+
   return (
     <div className="App">
       <h2>Leave a review</h2>
@@ -10,7 +14,7 @@ function App() {
         <label>Movie review:</label>
         <input type="text" name="review" />
 
-        <button>Submit</button>
+        <button type="submit">Submit</button>
       </div>
     </div>
   );
