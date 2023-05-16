@@ -1,13 +1,28 @@
 body, html {
-  font-family: "Roboto", sans-serif;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font:  rgb(10%, 10%, 10%);
   background: rgb(98%, 98%, 98%);
   height: 100%;
-  margin-top: 20px;
+  text-align: center;
 }
 
-.App {
-  text-align: center;
+.img {
+  background: url('../public/background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  opacity: 0.85;
+}
+
+.content {
+  position: absolute;
+  left: 50%; 
+  margin-top: 5rem;
+  transform: translateX(-50%);
+  width: 80%;
 }
 
 .review-port {
@@ -15,12 +30,117 @@ body, html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
+  /* background-color: #f7d8a7e1; */
+  background-color: #ffefd683;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .review-port input {
-  width: 300px;
+  background-color: rgba(255, 255, 255, 0.27);
+  border-color: #98733870;
+  width: 100%;
+  max-width: 400px;
   height: 60px;
   margin: 14px;
   font-size: 1.25rem;
+  box-sizing: border-box;
+  border-radius: 8px;
 }
 
+
+.card-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  min-height: 200px;
+  padding: 16px;
+  margin: 16px;
+  border-radius: 8px;
+  background-color: #ffefd6;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  margin-top: 0px;
+}
+
+.card p {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.card-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.card-footer button {
+  font-size: 1rem;
+  padding: 8px 16px;
+  margin-right: 8px;
+  border: none;
+  border-radius: 4px;
+  background-color: #00bfff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.card-footer input {
+  font-size: 1rem;
+  padding: 8px;
+  margin-right: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.card-footer button:hover {
+  background-color: #0c7cd5;
+}
+
+.stars-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
+.card-stars {
+  display: flex;
+  flex-direction: row;
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+
+.alert {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}

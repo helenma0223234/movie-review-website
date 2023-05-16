@@ -14,3 +14,6 @@ Laying down elements and components for a movie review website. Deployed with re
 - react router
 - redux
 - MySQL
+
+## Source
+- star rating: https://www.youtube.com/watch?v=l1Q7o8skKPM
