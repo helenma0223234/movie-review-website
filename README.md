@@ -2,15 +2,10 @@
 
 *CRUD web dev practice*
 
-Laying down elements and components for a movie review website. Deployed with render.com.
-
-[deployed url here](https://)
+Laying down elements and components for a movie review website. Deployed version check [here](https://github.com/helenma0223234/movie-review-client)
 
 ## Stack
 
-- eslint
+- express, node js
 - nodeJS, npm
 - react
-- react router
-- redux
-- MySQL
